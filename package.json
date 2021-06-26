@@ -4,17 +4,19 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build && nuxt generate",
+    "build": "nuxt build && nuxt generate && yarn deploy",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "deploy" : "firebase deploy --only hosting:devper-dashboard"
+    "deploy": "firebase deploy --only hosting:devper-dashboard"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.9.1",
+    "firebase": "^8.6.8",
     "nuxt": "^2.15.3"
   },
   "devDependencies": {
