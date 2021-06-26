@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "site": "devper-dashboard",
+    "public": "dist"
+  }
+}
