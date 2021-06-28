@@ -2,7 +2,7 @@
   <v-list shaped>
     <v-list-item v-for="n in countSite" :key="n.id" link>
       <v-list-item-content>
-        <SiteItem :name="n.name" />
+        <ShapeUIElementsItemlistsItem fname="Site" :lname="n.name" />
       </v-list-item-content>
     </v-list-item>
     <v-list-item link @click="addSiteFunc">
