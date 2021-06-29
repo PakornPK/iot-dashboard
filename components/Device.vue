@@ -1,5 +1,5 @@
 <template>
-  <v-list-item-title v-on:click="RemoveSiteFun(name)"
+  <v-list-item-title v-on:click="selectState(lname)"
     >{{ fname }}: {{ lname }}
   </v-list-item-title>
 </template>
@@ -8,8 +8,8 @@
 export default {
   props: ['fname', 'lname'],
   methods: {
-    RemoveSiteFun(name) {
-      console.log(name)
+    selectState(lname) {
+      console.log(lname)
     },
   },
 }
@@ -17,3 +17,4 @@ export default {
 
 <style>
 </style>
+

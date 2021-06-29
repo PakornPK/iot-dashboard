@@ -19,15 +19,15 @@
       <v-row justify="center" align="center" class="mb-2 mt-1 grey">
         <v-col class="text-center text-h5"> Your workspace </v-col>
       </v-row>
-      <SiteList />
+      <SiteList @updateDeviceList="updateDeviceList" />
     </v-navigation-drawer>
 
     <v-navigation-drawer app clipped right>
-      <DeviceList />
+      <DeviceList :PropsDevicePermission="PropsDevicePermission" :currentData="currentData" /> 
     </v-navigation-drawer>
 
     <v-main>
-      <!--  -->
+      <!-- //:PropsDevicePermission="" :devicelist="" /> -->
     </v-main>
 
     <v-footer app color="transparent" height="72" inset> </v-footer>
@@ -35,7 +35,17 @@
 </template>
 
 <script>
+
 export default {
-  data: () => ({ drawer: null }),
+  data: () => ({ drawer: null,
+  PropsDevicePermission:false,
+  currentData:[]
+   }),
+  methods: {
+    updateDeviceList(event){
+      this.PropsDevicePermission =  event.PropsDevicePermission
+      this.currentData =  event.devicelist
+    }
+  },
 }
 </script>

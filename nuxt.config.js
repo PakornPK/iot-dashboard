@@ -24,8 +24,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/site.js',
-    '~/plugins/device.js',
+    // '~/plugins/site.js',
+    // '~/plugins/device.js',
+    '~/plugins/groupsite.js',
     '~/plugins/fireauth.js',
   ],
 

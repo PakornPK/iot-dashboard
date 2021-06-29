@@ -1,0 +1,18 @@
+[
+    {
+        "siteId": "23-asdh24-241asd-asdasd",
+        "siteName": "Site1",
+        "devicelist": [
+            {
+                "id": "23sd-asd23-a123-sadasdg23",
+                "name": "สมชาย",
+                "status": false
+            },
+            {
+                "id": "24sd-ddsfasd23-a123-sadaddsdg23",
+                "name": "นเรศ",
+                "status": false
+            }
+        ]
+    }
+]
